@@ -1,0 +1,101 @@
+Q4.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int x = 10;
+5 cout << x ++ << endl ;
+6 cout << x << endl ;
+7 return 0;
+8 }
+Output:
+10 
+11
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q5.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int x = 10;
+5 cout << ++ x << endl ;
+6 cout << x << endl ;
+7 return 0;
+8 }
+Output:
+11
+11
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q6.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int a = 7, b = 3;
+5 cout << a % b << endl ;
+6 cout << ( -7) % 3 << endl ;
+7 return 0;
+8 }
+
+Output:
+1
+-1
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q7.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int a = 5;
+5 double b = 2.0;
+6 cout << a / 2 << endl ;
+7 cout << a / b << endl ;
+8 return 0;
+9 }
+
+Output:
+2
+2.5
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q8.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 char ch = ’A’;
+5 cout << ch << endl ;
+6 cout << ( int ) ch << endl ;
+7 cout << ch + 1 << endl ;
+8 return 0;
+9 }
+
+Output:
+A
+65
+66
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q9.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int x = 5;
+5 int y = x ++ + ++ x;
+6 cout << y << endl ;
+7 cout << x << endl ;
+8 return 0;
+9 }
+
+Output:
+13
+7
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q10.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 double x = 5.9;
+5 int y = ( int )x ;
+6 cout << y << endl ;
+7 cout << ( int ) 3.99 << endl ;
+8 return 0;
+9 }
+
+Output:
+5
+3
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .

@@ -1,0 +1,159 @@
+
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int a = 5, b = 10;
+5 if( a == b ) {
+6 cout << " Equal matches " << a << endl ;
+7 } else {
+8 cout << "Not equal " << a << endl ;
+9 }
+10 return 0;
+11 }
+
+
+Output:
+Not equal 5
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int a = 5, b = 10;
+5 if( a = b) {
+6 cout << " Equal matches " << a << endl ;
+7 } else {
+8 cout << "Not equal " << a << endl ;
+9 }
+10 return 0;
+11 }
+
+Output:
+Equal matches 10
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Q3.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int num = -7;
+5 if ( num >= 0) {
+6 cout << " Inside Positive block " << endl ;
+7 } else {
+8 cout << " Inside Negative block " << endl ;
+9 }
+10 return 0;
+11 }
+
+Output:
+Inside Negative block
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+Q4. (Concept: Short-circuit evaluation)
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int x = 0, y = 5;
+5 if( x != 0 && (y = y + 10) > 10) {
+6 cout << " Inside if branch " << endl ;
+7 }
+8 cout << "x = " << x << ", y = " << y << endl ;
+9 return 0;
+10 }
+
+Output:
+x=0  y=5
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q5.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int p = 1, q = 20;
+5 if( p == 1 || (q = q + 5) > 25) {
+6 cout << " First branch hit " << endl ;
+7 }
+8 cout << "p = " << p << ", q = " << q << endl ;
+9 return 0;
+10 }
+
+Output:
+First branch hit
+p=1 q=20
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q6.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int marks = 45;
+5 bool pass = ( marks >= 40) ? true : false ;
+6 int bonus = pass ? 5 : 0;
+7 cout << " Pass status : " << pass << ", Bonus : " << bonus << endl ;
+8 return 0;
+9 }
+
+Output:
+Pass status :true  Bonus:5
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q7.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int x = 12 , y = 8;
+5 int max_val = ( x > y) ? x : y ;
+6 cout << " Maximum value is " << max_val << endl ;
+7 return 0;
+8 }
+
+Output:
+Maximum value is 12 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q8. (Concept: Switch fall-through effect)
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int code = 2;
+5 switch ( code ) {
+6 case 1: cout << " Alpha " << endl ;
+7 case 2: cout << " Beta " << endl ;
+8 case 3: cout << " Gamma " << endl ;
+9 break ;
+10 default : cout << " Omega " << endl ;
+11 }
+12 return 0;
+13 }
+
+Output:
+Beta
+Gamma
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q9.
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int val = 65;
+5 switch ( val ) {
+6 case ’A’: cout << " Character match A" << endl ; break ;
+7 case 65: cout << " Integer match 65" << endl ; break ;
+8 default : cout << "No match found " << endl ;
+9 }
+10 return 0;
+11 }
+
+Output:
+Compilation error (duplicate case value)
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+Q10. (Crazy Question)
+1 # include < iostream >
+2 using namespace std ;
+3 int main () {
+4 int a = 0, b = 0;
+5 if (a ++ && ++ b) {
+6 cout << " Condition standard check true " << endl ;
+7 }
+8 cout << "a = " << a << ", b = " << b << endl ;
+9 return 0;
+10 }
+Output:
+a= 1 b=0
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .

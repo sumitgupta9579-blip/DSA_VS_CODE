@@ -1,0 +1,10 @@
+(i) totalMarks ->Correct
+(ii) _counter ->Correct
+(iii) 2ndPlayer ->Wrong(variable name can not start with number)
+(iv) player#score ->Wrong(Special Symbol Ca not use in variable name except _)
+(v) int ->Wrong (It is Predefined Keyword in Programming Language so we can not use)
+(vi) Hello World ->Wrong (Spaces are not allowed)
+(vii) MAX_SIZE ->Correct
+(viii)my,var ->Wrong(, Are not allowed Special Symbol)
+(ix) __x1 ->Correct
+(x) Float ->Correct

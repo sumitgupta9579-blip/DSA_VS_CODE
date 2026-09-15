@@ -1,0 +1,14 @@
+(i) In C++, a double variable can store 3.14, while an int would truncate it
+to 3. ->True
+
+
+(ii) The modulus operator % works with double operands just like with int
+operands.->False
+
+
+(iii) Blank spaces are allowed inside a variable name in C++ (e.g., my variable
+is valid).->Fasle
+
+
+(iv) The post-increment operator (x++) first uses the current value in the expres-
+sion, then increments it. ->True
