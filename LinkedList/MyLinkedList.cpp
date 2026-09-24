@@ -159,6 +159,18 @@ public:
         delete toDelete;
         size--;
     }
+    int get(int idx){
+        if(idx < 0 || idx >= size){
+            cout << "Invalid index!" << endl;
+            return -1; // or throw an exception
+        }
+        Node* temp = head;
+        for(int i = 0; i < idx; i++){
+            temp = temp->next;
+        }
+        return temp->val;
+    }
+    
 };
 
 int main() {
